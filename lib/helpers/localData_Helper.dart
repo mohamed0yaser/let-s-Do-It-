@@ -48,7 +48,7 @@ class DBH{
     return await _database!.delete(_tableName);
   }
 
-  static Future<List<Map<String, Object?>>> getAll (Task? task)async{
+  static Future<List<Map<String, dynamic>>> getAll ()async{
     return await _database!.query(_tableName);
   }
 
